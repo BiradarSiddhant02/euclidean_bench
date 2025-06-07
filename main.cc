@@ -9,10 +9,10 @@
 // #include <omp.h>   // For OpenMP functions if needed by C files
 
 extern "C" {
-    double naive(double* p1, double* p2, size_t n);
-    double naive_mp(double* p1, double* p2, size_t n);
-    double simd(double* p1, double* p2, size_t n);
-    double simd_mp(double* p1, double* p2, size_t n);
+    double naive(double*, double*, size_t);
+    double naive_mp(double*, double*, size_t);
+    double simd(double*, double*, size_t);
+    double simd_mp(double*, double*, size_t);
 }
 
 // Helper function to generate random double vectors
